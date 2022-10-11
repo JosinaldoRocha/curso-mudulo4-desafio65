@@ -1,10 +1,9 @@
+import 'package:challenge65/app/components/text.dart';
+import 'package:challenge65/app/components/text_field.dart';
 import 'package:challenge65/app/models/notes_model.dart';
 import 'package:challenge65/app/models/student_information_model.dart';
-import 'package:challenge65/app/modules/components/Text.dart';
 import 'package:challenge65/app/modules/reportCard/report_card_page.dart';
 import 'package:flutter/material.dart';
-
-import '../components/text_field.dart';
 
 class NotesPage extends StatefulWidget {
   const NotesPage({super.key, required this.title});
@@ -54,7 +53,7 @@ class _NotesPageState extends State<NotesPage> {
         necessaryNotes = 0;
       } else {
         situation = 'Reprovado(a)';
-        necessaryNotes = 10 - average;
+        necessaryNotes = 6 - average;
       }
     });
   }
@@ -121,31 +120,31 @@ class _NotesPageState extends State<NotesPage> {
                   height: 20,
                 ),
                 newText('Disciplina:'),
-                newTextField('Digite a disciplina', Icons.subject,
+                newTextFormField('Digite a disciplina', Icons.subject,
                     TextInputType.name, ctrlSubject),
                 const SizedBox(
                   height: 2,
                 ),
                 newText('1° Bim:'),
-                newTextField('Digite a nota', Icons.note_add,
+                newTextFormField('Digite a nota', Icons.note_add,
                     TextInputType.number, ctrlFirstNote),
                 const SizedBox(
                   height: 2,
                 ),
                 newText('2° Bim:'),
-                newTextField('Digite a nota', Icons.note_add,
+                newTextFormField('Digite a nota', Icons.note_add,
                     TextInputType.number, ctrlSecondNote),
                 const SizedBox(
                   height: 2,
                 ),
                 newText('3° Bim:'),
-                newTextField('Digite a nota', Icons.note_add,
+                newTextFormField('Digite a nota', Icons.note_add,
                     TextInputType.number, ctrlThirdNote),
                 const SizedBox(
                   height: 2,
                 ),
                 newText('4° Bim:'),
-                newTextField('Digite a nota', Icons.note_add,
+                newTextFormField('Digite a nota', Icons.note_add,
                     TextInputType.number, ctrlFourthNote),
                 Text(
                   'Média: $average',

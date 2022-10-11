@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-Widget newTextField(String text, IconData icons, TextInputType textType,
+Widget newTextFormField(String text, IconData icons, TextInputType textType,
     TextEditingController controller) {
-  return TextField(
+  return TextFormField(
     keyboardType: textType,
     controller: controller,
     decoration: InputDecoration(

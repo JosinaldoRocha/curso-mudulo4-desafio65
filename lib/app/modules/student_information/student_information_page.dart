@@ -1,6 +1,6 @@
+import 'package:challenge65/app/components/text.dart';
 import 'package:challenge65/app/models/student_information_model.dart';
-import 'package:challenge65/app/modules/components/Text.dart';
-import 'package:challenge65/app/modules/components/text_field.dart';
+import 'package:challenge65/app/components/text_field.dart';
 import 'package:challenge65/app/modules/notes/notes_page.dart';
 import 'package:flutter/material.dart';
 
@@ -59,32 +59,32 @@ class _StudentInformationState extends State<StudentInformation> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 newText('Nome do aluno(a):'),
-                newTextField('Digite o nome do aluno', Icons.person,
+                newTextFormField('Digite o nome do aluno', Icons.person,
                     TextInputType.text, ctrllStudent),
                 const SizedBox(
                   height: 5,
                 ),
                 newText('Nível de ensino:'),
-                newTextField('Digite o nível de ensino', Icons.person,
+                newTextFormField('Digite o nível de ensino', Icons.person,
                     TextInputType.text, ctrllLevel),
                 const SizedBox(
                   height: 5,
                 ),
                 newText('Ano:'),
-                newTextField('Digite o ano', Icons.person, TextInputType.number,
-                    ctrllYear),
+                newTextFormField('Digite o ano', Icons.person,
+                    TextInputType.number, ctrllYear),
                 const SizedBox(
                   height: 5,
                 ),
                 newText('Turma:'),
-                newTextField('Digite a turma', Icons.person, TextInputType.text,
-                    ctrllGang),
+                newTextFormField('Digite a turma', Icons.person,
+                    TextInputType.text, ctrllGang),
                 const SizedBox(
                   height: 5,
                 ),
                 newText('Turno'),
-                newTextField('Digite o turno', Icons.person, TextInputType.text,
-                    ctrllShift),
+                newTextFormField('Digite o turno', Icons.person,
+                    TextInputType.text, ctrllShift),
                 const SizedBox(
                   height: 100,
                 ),
